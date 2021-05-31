@@ -45,6 +45,11 @@ class Environment {
     this.initCameraControls();
   
     this.addEnvLights();
+
+    const loader = new THREE.TextureLoader();
+    const bgTexture = loader.load('textures/bg.jpg');
+    this.scene.background = bgTexture;
+
   }
 
 
